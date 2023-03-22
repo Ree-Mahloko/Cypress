@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-03-22T10:46:19.519Z",
+    "end": "2023-03-22T10:48:28.120Z",
+    "duration": 128601,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c307c5ae-b44c-4a8c-a533-c1ee8c6fe311",
+      "title": "",
+      "fullFile": "cypress\\e2e\\Project1.cy.js",
+      "file": "cypress\\e2e\\Project1.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b8ed75d5-6d1e-4a16-b783-3448e5764c64",
+          "title": "Testing the hotel booking form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Adding data to form",
+              "fullTitle": "Testing the hotel booking form Adding data to form",
+              "timedOut": null,
+              "duration": 43129,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// const page = new hotelbooking();\npage.visit();\npage.fill();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://hotel-test.equalexperts.io/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 3.248.75.28:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://hotel-test.equalexperts.io/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 3.248.75.28:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:58689/__cypress/runner/cypress_runner.js:138252:82)\n    at visitFailedByErr (http://localhost:58689/__cypress/runner/cypress_runner.js:137644:12)\n    at <unknown> (http://localhost:58689/__cypress/runner/cypress_runner.js:138251:11)\n    at tryCatcher (http://localhost:58689/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (http://localhost:58689/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (http://localhost:58689/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (http://localhost:58689/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (http://localhost:58689/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (http://localhost:58689/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (http://localhost:58689/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:58689/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (http://localhost:58689/__cypress/runner/cypress_runner.js:3500:14)\nFrom Your Spec Code:\n    at hotelbooking.visit (webpack:///./cypress/pages/bookingpage.js:7:7)\n    at Context.eval (webpack:///./cypress/e2e/Project1.cy.js:17:9)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 3.248.75.28:80\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "c6270ecc-c6a8-431f-a403-3647892c80f8",
+              "parentUUID": "b8ed75d5-6d1e-4a16-b783-3448e5764c64",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verifying data",
+              "fullTitle": "Testing the hotel booking form Verifying data",
+              "timedOut": null,
+              "duration": 42499,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "page.visit();\n//data takes time to load\ncy.wait(5000);\npage.verify();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://hotel-test.equalexperts.io/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 3.248.75.28:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://hotel-test.equalexperts.io/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 3.248.75.28:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:58689/__cypress/runner/cypress_runner.js:138252:82)\n    at visitFailedByErr (http://localhost:58689/__cypress/runner/cypress_runner.js:137644:12)\n    at <unknown> (http://localhost:58689/__cypress/runner/cypress_runner.js:138251:11)\n    at tryCatcher (http://localhost:58689/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (http://localhost:58689/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (http://localhost:58689/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (http://localhost:58689/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (http://localhost:58689/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (http://localhost:58689/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (http://localhost:58689/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:58689/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (http://localhost:58689/__cypress/runner/cypress_runner.js:3500:14)\nFrom Your Spec Code:\n    at hotelbooking.visit (webpack:///./cypress/pages/bookingpage.js:7:7)\n    at Context.eval (webpack:///./cypress/e2e/Project1.cy.js:23:9)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 3.248.75.28:80\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "4c018851-9eda-4217-b802-0e6e3feb704e",
+              "parentUUID": "b8ed75d5-6d1e-4a16-b783-3448e5764c64",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Deleting row",
+              "fullTitle": "Testing the hotel booking form Deleting row",
+              "timedOut": null,
+              "duration": 42646,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "page.visit();\n//data takes time to load\ncy.wait(5000);\npage.delete();",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://hotel-test.equalexperts.io/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 3.248.75.28:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://hotel-test.equalexperts.io/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ETIMEDOUT 3.248.75.28:80\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:58689/__cypress/runner/cypress_runner.js:138252:82)\n    at visitFailedByErr (http://localhost:58689/__cypress/runner/cypress_runner.js:137644:12)\n    at <unknown> (http://localhost:58689/__cypress/runner/cypress_runner.js:138251:11)\n    at tryCatcher (http://localhost:58689/__cypress/runner/cypress_runner.js:8914:23)\n    at Promise._settlePromiseFromHandler (http://localhost:58689/__cypress/runner/cypress_runner.js:6849:31)\n    at Promise._settlePromise (http://localhost:58689/__cypress/runner/cypress_runner.js:6906:18)\n    at Promise._settlePromise0 (http://localhost:58689/__cypress/runner/cypress_runner.js:6951:10)\n    at Promise._settlePromises (http://localhost:58689/__cypress/runner/cypress_runner.js:7027:18)\n    at _drainQueueStep (http://localhost:58689/__cypress/runner/cypress_runner.js:3621:12)\n    at _drainQueue (http://localhost:58689/__cypress/runner/cypress_runner.js:3614:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:58689/__cypress/runner/cypress_runner.js:3630:5)\n    at Async.drainQueues (http://localhost:58689/__cypress/runner/cypress_runner.js:3500:14)\nFrom Your Spec Code:\n    at hotelbooking.visit (webpack:///./cypress/pages/bookingpage.js:7:7)\n    at Context.eval (webpack:///./cypress/e2e/Project1.cy.js:30:8)\n\nFrom Node.js Internals:\n  Error: connect ETIMEDOUT 3.248.75.28:80\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "1fbd5138-7ab6-451e-96e5-a532fe79d1fb",
+              "parentUUID": "b8ed75d5-6d1e-4a16-b783-3448e5764c64",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c6270ecc-c6a8-431f-a403-3647892c80f8",
+            "4c018851-9eda-4217-b802-0e6e3feb704e",
+            "1fbd5138-7ab6-451e-96e5-a532fe79d1fb"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 128274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
